@@ -1,0 +1,10 @@
+=== TÀI LIỆU KỸ THUẬT KIẾN TRÚC MẠNG INTERNET & CÁC GIAO THỨC ===
+1. Mô hình phân tầng: TCP/IP và OSI 7 tầng.
+2. Giao thức Tầng Ứng Dụng (Application Layer):
+   - HTTP/HTTPS: Cổng 80/443 (Web Dashboard & RESTful API)
+   - FTP (File Transfer Protocol): Cổng 21/2121 (Chia sẻ tập tin & Phân quyền user)
+   - SMTP (Simple Mail Transfer Protocol): Cổng 25/2525 (Gửi thư điện tử đa miền)
+3. Cơ chế Web Động:
+   - Server-Sent Events (SSE) / WebSocket truyền tải dữ liệu viễn trắc IoT thời gian thực.
+   - Xử lý bất đồng bộ Back-end phân tích cảnh báo tức thì.
+=== HẾT TÀI LIỆU ===

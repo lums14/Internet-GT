@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#d946ef" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="900" height="500" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.6">
+    <line x1="50" y1="0" x2="50" y2="500" />
+    <line x1="150" y1="0" x2="150" y2="500" />
+    <line x1="250" y1="0" x2="250" y2="500" />
+    <line x1="350" y1="0" x2="350" y2="500" />
+    <line x1="450" y1="0" x2="450" y2="500" />
+    <line x1="550" y1="0" x2="550" y2="500" />
+    <line x1="650" y1="0" x2="650" y2="500" />
+    <line x1="750" y1="0" x2="750" y2="500" />
+    <line x1="850" y1="0" x2="850" y2="500" />
+    <line x1="0" y1="100" x2="900" y2="100" />
+    <line x1="0" y1="200" x2="900" y2="200" />
+    <line x1="0" y1="300" x2="900" y2="300" />
+    <line x1="0" y1="400" x2="900" y2="400" />
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="45" fill="#f8fafc" font-size="20" font-family="'Segoe UI', Inter, sans-serif" font-weight="700" text-anchor="middle">SƠ ĐỒ KIẾN TRÚC MẠNG &amp; CÁC GIAO THỨC TẦNG ỨNG DỤNG</text>
+  <text x="450" y="70" fill="#94a3b8" font-size="13" font-family="'Segoe UI', Inter, sans-serif" text-anchor="middle">Hệ Thống IoT Telemetry, Web Động, FTP Server (2121) &amp; SMTP Multi-Domain (2525)</text>
+
+  <!-- Connecting Lines -->
+  <!-- Web to Core -->
+  <line x1="170" y1="240" x2="450" y2="240" stroke="#00f0ff" stroke-width="2.5" stroke-dasharray="6,4" />
+  <!-- IoT to Core -->
+  <line x1="450" y1="120" x2="450" y2="200" stroke="#10b981" stroke-width="2.5" stroke-dasharray="6,4" />
+  <!-- Core to FTP -->
+  <line x1="450" y1="280" x2="280" y2="380" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,4" />
+  <!-- Core to SMTP -->
+  <line x1="450" y1="280" x2="620" y2="380" stroke="#8b5cf6" stroke-width="2.5" stroke-dasharray="6,4" />
+  <!-- Core to Ext Monitoring -->
+  <line x1="450" y1="240" x2="730" y2="240" stroke="#ec4899" stroke-width="2.5" stroke-dasharray="6,4" />
+
+  <!-- Node 1: Client Web Browser -->
+  <g transform="translate(170, 240)">
+    <circle r="48" fill="#1e293b" stroke="#00f0ff" stroke-width="3" filter="url(#glow)"/>
+    <text x="0" y="-8" fill="#38bdf8" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">CLIENT WEB</text>
+    <text x="0" y="10" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="middle">HTTP :3000</text>
+    <text x="0" y="24" fill="#67e8f9" font-size="9" font-family="sans-serif" text-anchor="middle">SSE Live Stream</text>
+  </g>
+
+  <!-- Node 2: IoT Sensors -->
+  <g transform="translate(450, 110)">
+    <circle r="46" fill="#1e293b" stroke="#10b981" stroke-width="3" filter="url(#glow)"/>
+    <text x="0" y="-8" fill="#34d399" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">IoT SENSORS</text>
+    <text x="0" y="10" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="middle">Nhiệt/Ẩm/Khí</text>
+    <text x="0" y="24" fill="#a7f3d0" font-size="9" font-family="sans-serif" text-anchor="middle">Push API REST</text>
+  </g>
+
+  <!-- Central Node: Core Gateway & Node.js Server -->
+  <g transform="translate(450, 240)">
+    <rect x="-85" y="-40" width="170" height="80" rx="12" fill="url(#cyanGrad)" stroke="#ffffff" stroke-width="2" filter="url(#glow)"/>
+    <text x="0" y="-12" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">CENTRAL BACK-END</text>
+    <text x="0" y="8" fill="#f0f9ff" font-size="11" font-family="sans-serif" font-weight="600" text-anchor="middle">Node.js Hub Engine</text>
+    <text x="0" y="24" fill="#bae6fd" font-size="9" font-family="sans-serif" text-anchor="middle">Xử lý viễn trắc &amp; Tự động hóa</text>
+  </g>
+
+  <!-- Node 3: FTP Server -->
+  <g transform="translate(280, 390)">
+    <circle r="48" fill="#1e293b" stroke="#f59e0b" stroke-width="3" filter="url(#glow)"/>
+    <text x="0" y="-8" fill="#fbbf24" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">FTP SERVER</text>
+    <text x="0" y="10" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="middle">RFC 959 (:2121)</text>
+    <text x="0" y="24" fill="#fde68a" font-size="9" font-family="sans-serif" text-anchor="middle">Admin &amp; Guest</text>
+  </g>
+
+  <!-- Node 4: SMTP Server Multi-domain -->
+  <g transform="translate(620, 390)">
+    <circle r="48" fill="#1e293b" stroke="#8b5cf6" stroke-width="3" filter="url(#glow)"/>
+    <text x="0" y="-12" fill="#c084fc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">SMTP MAIL SERVER</text>
+    <text x="0" y="4" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="middle">RFC 5321 (:2525)</text>
+    <text x="0" y="18" fill="#e9d5ff" font-size="9" font-family="sans-serif" text-anchor="middle">@iot-network.local</text>
+    <text x="0" y="30" fill="#e9d5ff" font-size="9" font-family="sans-serif" text-anchor="middle">@monitoring-lab.vn</text>
+  </g>
+
+  <!-- Node 5: Enterprise Network Nodes -->
+  <g transform="translate(740, 240)">
+    <circle r="48" fill="#1e293b" stroke="#ec4899" stroke-width="3" filter="url(#glow)"/>
+    <text x="0" y="-8" fill="#f472b6" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">CORE ROUTERS</text>
+    <text x="0" y="10" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="middle">Cisco &amp; Fortinet</text>
+    <text x="0" y="24" fill="#fbcfe8" font-size="9" font-family="sans-serif" text-anchor="middle">VLAN / IP Routing</text>
+  </g>
+
+  <!-- Protocol badges in bottom corners -->
+  <rect x="20" y="455" width="260" height="30" rx="6" fill="#0f172a" stroke="#334155" />
+  <text x="30" y="475" fill="#38bdf8" font-size="11" font-family="sans-serif">● HTTP/SSE :3000</text>
+  <text x="135" y="475" fill="#fbbf24" font-size="11" font-family="sans-serif">● FTP :2121</text>
+  <text x="210" y="475" fill="#a855f7" font-size="11" font-family="sans-serif">● SMTP :2525</text>
+</svg>

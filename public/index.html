@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark" data-accent="cyan">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Network &amp; Protocols Hub - Bài Tập Lớn Internet &amp; Các Giao Thức</title>
+  <meta name="description" content="Hệ thống giám sát trạm quan trắc viễn trắc IoT, Web động realtime, tích hợp FTP Server phân quyền và Mail Server đa miền (SMTP)">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons (CDN) & Chart.js (CDN) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- ====================================================================
+         HEADER BAR: BRANDING, LIVE PROTOCOLS STATUS, CONTROLS
+         ==================================================================== -->
+    <header class="main-header">
+      <div class="brand-section">
+        <div class="brand-logo-icon">
+          <i data-lucide="radio"></i>
+        </div>
+        <div class="brand-info">
+          <h1>IoT Smart Network &amp; Protocols Hub</h1>
+          <div class="course-tag">Bài Tập Lớn Môn: <strong>Internet &amp; Các Giao Thức</strong> | Web Động Realtime</div>
+        </div>
+      </div>
+
+      <!-- Realtime Protocol Status Badges -->
+      <div class="protocol-pill-group">
+        <div class="proto-pill active" title="Giao thức HTTP Web Dashboard & SSE Stream">
+          <span class="proto-dot"></span>
+          <span>HTTP / SSE :3000</span>
+        </div>
+        <div class="proto-pill active" title="Giao thức FTP Server (RFC 959)">
+          <span class="proto-dot" style="background:#f59e0b; box-shadow:0 0 8px #f59e0b;"></span>
+          <span>FTP Server :2121</span>
+        </div>
+        <div class="proto-pill active" title="Giao thức SMTP Mail Server Đa Miền (RFC 5321)">
+          <span class="proto-dot" style="background:#8b5cf6; box-shadow:0 0 8px #8b5cf6;"></span>
+          <span>SMTP Mail :2525</span>
+        </div>
+      </div>
+
+      <!-- Customization & User Role Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle (Light / Dark) -->
+        <button id="btnThemeToggle" class="btn-icon" title="Chuyển chế độ Sáng / Tối">
+          <i data-lucide="moon" id="themeIcon"></i>
+        </button>
+
+        <!-- Customize Drawer Toggle (Chỉ dành cho Admin) -->
+        <button id="btnCustomize" class="btn-icon admin-only" title="Tùy biến Giao diện & Widget (Chỉ dành cho Admin)">
+          <i data-lucide="sliders"></i>
+        </button>
+
+        <!-- Audio Alert Beeper Toggle -->
+        <button id="btnAudioToggle" class="btn-icon" title="Bật/Tắt Còi cảnh báo âm thanh">
+          <i data-lucide="volume-2" id="audioIcon"></i>
+        </button>
+
+        <!-- Role Switcher (Admin / Guest) -->
+        <div id="roleSelector" class="role-badge" title="Bấm để chuyển đổi quyền Admin / Guest">
+          <i data-lucide="shield-check" id="roleIcon"></i>
+          <span id="roleText">Role: Admin</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Guest View-Only Alert Banner -->
+    <div id="guestNoticeBanner" class="guest-banner" style="display: none;">
+      <i data-lucide="shield-alert"></i>
+      <div>
+        <strong>CHẾ ĐỘ XEM (ROLE: GUEST):</strong> Bạn đang ở quyền Khách (Chỉ xem). Toàn bộ các thao tác Thêm/Sửa/Xóa thiết bị, Gửi lệnh điều khiển, Bắn API IoT, Tải file FTP, Soạn thư SMTP và Tùy biến giao diện đã được khóa an toàn. Nhấp vào nút <strong>Role</strong> phía trên để chuyển sang <strong>Admin</strong> khi cần thực hiện thao tác.
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         NAVIGATION TABS
+         ==================================================================== -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="dashboard">
+        <i data-lucide="layout-dashboard"></i>
+        <span>Giám Sát &amp; Web Động</span>
+      </button>
+      <button class="tab-btn" data-tab="ftp">
+        <i data-lucide="folder-archive"></i>
+        <span>Hệ Thống FTP Server (:2121)</span>
+      </button>
+      <button class="tab-btn" data-tab="mail">
+        <i data-lucide="mail"></i>
+        <span>Hệ Thống Mail Đa Miền (:2525)</span>
+      </button>
+      <button class="tab-btn" data-tab="architecture">
+        <i data-lucide="network"></i>
+        <span>Kiến Trúc Mạng &amp; Báo Cáo BTL</span>
+      </button>
+    </nav>
+
+    <!-- ====================================================================
+         TAB 1: DASHBOARD & DYNAMIC REALTIME WEB
+         ==================================================================== -->
+    <main id="tab-dashboard" class="tab-content active">
+      
+      <!-- KPI Stats Grid (Can be toggled in Customize) -->
+      <section id="widget-kpi" class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-info">
+            <div class="kpi-label">Tổng Thiết Bị &amp; Cảm Biến</div>
+            <div class="kpi-value" id="kpiTotalDevices">0</div>
+          </div>
+          <div class="kpi-icon-box icon-blue">
+            <i data-lucide="cpu"></i>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-info">
+            <div class="kpi-label">Trạng Thái Bình Thường</div>
+            <div class="kpi-value" id="kpiNormalCount" style="color: var(--status-normal);">0</div>
+          </div>
+          <div class="kpi-icon-box icon-green">
+            <i data-lucide="check-circle-2"></i>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-info">
+            <div class="kpi-label">Cảnh Báo Vượt Ngưỡng</div>
+            <div class="kpi-value" id="kpiWarningCount" style="color: var(--status-warning);">0</div>
+          </div>
+          <div class="kpi-icon-box icon-amber">
+            <i data-lucide="alert-triangle"></i>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-info">
+            <div class="kpi-label">Nhiệt Độ TB / Tải Mạng</div>
+            <div class="kpi-value" id="kpiAvgMetrics">0°C</div>
+          </div>
+          <div class="kpi-icon-box icon-purple">
+            <i data-lucide="activity"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Charts Section (Line Chart Realtime + Doughnut + Bar) -->
+      <section id="widget-charts" class="charts-grid">
+        <!-- Realtime Telemetry Line Chart -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <i data-lucide="line-chart" style="color: var(--accent-color);"></i>
+              <span>Biểu Đồ Viễn Trắc Thời Gian Thực (Real-time Telemetry Trend)</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="badge badge-normal">
+                <span class="proto-dot"></span> Live Stream (SSE)
+              </span>
+              <button id="btnPauseSim" class="btn btn-secondary admin-only" style="padding: 4px 10px; font-size: 0.78rem;">
+                <i data-lucide="pause" id="simIcon" style="width:14px; height:14px;"></i>
+                <span id="simBtnText">Dừng Tự Động</span>
+              </button>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="realtimeChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Doughnut Status & Bar Distribution Chart -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <i data-lucide="pie-chart" style="color: var(--status-warning);"></i>
+              <span>Tỷ Lệ An Toàn &amp; Trạng Thái</span>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="statusDoughnutChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- Multimedia Section: CCTV Live Video/Clip + IoT Station Visualizer -->
+      <section id="widget-media" class="media-section">
+        <!-- Live Camera Simulation Canvas -->
+        <div class="card" style="padding: 16px;">
+          <div class="card-header" style="margin-bottom: 12px;">
+            <div class="card-title">
+              <i data-lucide="video" style="color: #ef4444;"></i>
+              <span>Camera Giám Sát Hiện Trường Trực Tiếp (Live CCTV / Clip Stream)</span>
+            </div>
+            <span class="badge" style="background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid #ef4444;">
+              <i data-lucide="rss" style="width:12px; height:12px;"></i> LIVE FEED
+            </span>
+          </div>
+
+          <div class="video-player-wrapper">
+            <canvas id="cctvCanvas" width="640" height="280"></canvas>
+            <div class="cctv-hud">
+              <div>
+                <span style="font-weight: bold; color: #fff;">FEED ID:</span> 
+                <span id="cctvCamName">CAM-01 [DATA CENTER RACK A]</span>
+              </div>
+              <div class="cctv-rec">
+                <div class="cctv-rec-dot"></div> REC • <span id="cctvClock">--:--:--</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cctv-controls-bar">
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <button id="btnCctvPlay" class="btn btn-secondary" style="padding: 6px 12px;">
+                <i data-lucide="pause" id="cctvPlayIcon" style="width:14px; height:14px;"></i>
+                <span id="cctvPlayText">Pause</span>
+              </button>
+              <button id="btnCctvSnapshot" class="btn btn-secondary" style="padding: 6px 12px;">
+                <i data-lucide="camera" style="width:14px; height:14px;"></i> Chụp Ảnh
+              </button>
+            </div>
+            <select id="cctvCamSelect" class="cctv-cam-select">
+              <option value="1">CAM-01: Data Center Tầng 2</option>
+              <option value="2">CAM-02: Phòng Thí Nghiệm Internet Lab</option>
+              <option value="3">CAM-03: Sân Thượng Trạm Khí Tượng ESP32</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- IoT Station Architecture & Hardware Card -->
+        <div class="card" style="padding: 16px; display: flex; flex-direction: column;">
+          <div class="card-header" style="margin-bottom: 12px;">
+            <div class="card-title">
+              <i data-lucide="server" style="color: var(--accent-color);"></i>
+              <span>Hình Ảnh Trạm Thu Thập Viễn Trắc IoT</span>
+            </div>
+          </div>
+          <div style="flex: 1; border-radius: var(--radius-sm); overflow: hidden; background: #020617; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color);">
+            <img src="assets/images/iot_station.svg" alt="Trạm quan trắc IoT" style="width: 100%; height: 260px; object-fit: contain;">
+          </div>
+        </div>
+      </section>
+
+      <!-- Dynamic Data Table Section (Requirements: Table, E-form, API action, Backend processing) -->
+      <section id="widget-table" class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">
+              <i data-lucide="table" style="color: var(--accent-color);"></i>
+              <span>Bảng Nhật Ký Dữ Liệu Cảm Biến Thời Gian Thực</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+              Dữ liệu tự động cập nhật qua <strong>API IoT</strong>, nhập liệu qua <strong>E-Form</strong>, và phân tích cảnh báo tại <strong>Back-end</strong>.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <!-- E-Form Trigger: Add Device (Admin only) -->
+            <button id="btnOpenAddModal" class="btn btn-primary admin-only">
+              <i data-lucide="plus-circle"></i> Thêm Thiết Bị (E-Form)
+            </button>
+            <!-- API IoT Simulation Push Trigger (Admin only) -->
+            <button id="btnOpenPushApiModal" class="btn btn-secondary admin-only">
+              <i data-lucide="upload-cloud"></i> Bắn Gói Tin IoT (API)
+            </button>
+            <!-- Export Data Actions -->
+            <button id="btnExportCsv" class="btn btn-secondary" title="Xuất dữ liệu viễn trắc ra CSV">
+              <i data-lucide="download"></i> Xuất CSV
+            </button>
+            <button id="btnPrintReport" class="btn btn-secondary" title="In hoặc lưu báo cáo PDF">
+              <i data-lucide="printer"></i> In Báo Cáo
+            </button>
+          </div>
+        </div>
+
+        <!-- Table Toolbar: Search, Filters, Limit -->
+        <div class="table-toolbar">
+          <div class="search-input-box">
+            <i data-lucide="search" class="search-icon" style="width:16px; height:16px;"></i>
+            <input type="text" id="searchInput" placeholder="Tìm kiếm theo mã, tên thiết bị, vị trí...">
+          </div>
+
+          <div class="filter-group">
+            <select id="filterStatus" class="filter-select">
+              <option value="all">Tất cả trạng thái</option>
+              <option value="Normal">Bình thường (Normal)</option>
+              <option value="Warning">Cảnh báo (Warning)</option>
+            </select>
+
+            <select id="filterType" class="filter-select">
+              <option value="all">Tất cả loại cảm biến</option>
+              <option value="Temperature">Nhiệt độ (°C)</option>
+              <option value="Humidity">Độ ẩm (%)</option>
+              <option value="Network Bandwidth">Tải băng thông (Mbps)</option>
+              <option value="CPU Load">Tải CPU (%)</option>
+              <option value="Pressure">Áp suất (hPa)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Responsive Data Table -->
+        <div class="table-responsive">
+          <table class="custom-table" id="devicesTable">
+            <thead>
+              <tr>
+                <th>Mã Thiết Bị</th>
+                <th>Tên Thiết Bị / Cảm Biến</th>
+                <th>Vị Trí Lắp Đặt</th>
+                <th>Loại Cảm Biến</th>
+                <th>Giá Trị Đo</th>
+                <th>Ngưỡng An Toàn</th>
+                <th>Trạng Thái</th>
+                <th>Thời Gian Cập Nhật</th>
+                <th style="text-align: right;">Thao Tác Nghiệp Vụ</th>
+              </tr>
+            </thead>
+            <tbody id="devicesTableBody">
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ====================================================================
+         TAB 2: FTP SERVER (RFC 959) & WEB FILE EXPLORER
+         ==================================================================== -->
+    <main id="tab-ftp" class="tab-content" style="display: none;">
+      <section class="protocol-hero">
+        <div class="hero-meta">
+          <h2><i data-lucide="hard-drive" style="color: #f59e0b; vertical-align: middle;"></i> Hệ Thống FTP Server (Cổng 2121)</h2>
+          <p>
+            Triển khai giao thức truyền tập tin chuẩn <strong>FTP (RFC 959)</strong> với 2 nhóm người dùng:
+            <br>
+            • <strong>Admin</strong> (admin / admin123): Toàn quyền Đọc, Ghi, Xóa file (Full Access) trên toàn kho lưu trữ.
+            <br>
+            • <strong>Guest</strong> (guest / guest123): Chỉ có quyền Đọc (Read-Only) trong thư mục <code>/public</code>.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 14px 20px;">
+          <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; margin-bottom: 6px;">
+            KẾT NỐI FILEZILLA CLIENT NGOÀI:
+          </div>
+          <div style="font-family: monospace; font-size: 0.88rem; color: #38bdf8;">
+            Host: <strong>127.0.0.1</strong> | Port: <strong>2121</strong>
+          </div>
+          <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">
+            User: <strong>admin</strong> (pass: <strong>admin123</strong>) hoặc <strong>guest</strong> (pass: <strong>guest123</strong>)
+          </div>
+        </div>
+      </section>
+
+      <!-- FTP Web File Explorer Card -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <i data-lucide="folder-git-2" style="color: #f59e0b;"></i>
+            <span>Kho Lưu Trữ Tập Tin FTP (Web FTP Explorer)</span>
+          </div>
+
+          <div style="display: flex; gap: 10px;">
+            <select id="ftpFolderSelector" class="filter-select">
+              <option value="all">Xem tất cả thư mục có quyền</option>
+              <option value="public">Thư mục công cộng (/public)</option>
+              <option value="admin_only">Thư mục bảo mật (/admin_only)</option>
+            </select>
+
+            <button id="btnRefreshFtp" class="btn btn-secondary">
+              <i data-lucide="refresh-cw"></i> Làm Mới
+            </button>
+          </div>
+        </div>
+
+        <!-- Upload Dropzone (Admin only) -->
+        <div id="ftpUploadSection" class="file-dropzone admin-only">
+          <i data-lucide="upload" style="width: 32px; height: 32px; color: var(--accent-color); margin-bottom: 8px;"></i>
+          <p style="font-weight: 600; color: var(--text-main);">Tải File Mới Lên FTP Server</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">
+            Chọn thư mục đích: 
+            <select id="uploadTargetFolder" style="background:var(--bg-card); color:var(--text-main); border:1px solid var(--border-color); padding:2px 8px; border-radius:4px;">
+              <option value="public">/public (Công cộng)</option>
+              <option value="admin_only">/admin_only (Bảo mật - Chỉ Admin)</option>
+            </select>
+          </p>
+          <input type="file" id="ftpFileInput" style="margin-top: 10px; display: inline-block;">
+          <div style="margin-top: 10px;">
+            <button id="btnUploadFtp" class="btn btn-primary" style="padding: 6px 14px; font-size: 0.85rem;">
+              <i data-lucide="send"></i> Xác Nhận Upload File
+            </button>
+          </div>
+        </div>
+
+        <!-- FTP Files Table -->
+        <div class="table-responsive">
+          <table class="custom-table" id="ftpTable">
+            <thead>
+              <tr>
+                <th>Tên Tập Tin</th>
+                <th>Thư Mục</th>
+                <th>Dung Lượng</th>
+                <th>Thời Gian Cập Nhật</th>
+                <th>Phân Quyền</th>
+                <th style="text-align: right;">Thao Tác</th>
+              </tr>
+            </thead>
+            <tbody id="ftpTableBody">
+              <!-- Dynamically populated files -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         TAB 3: MAIL SERVER ĐA MIỀN (RFC 5321) & WEBMAIL CLIENT
+         ==================================================================== -->
+    <main id="tab-mail" class="tab-content" style="display: none;">
+      <section class="protocol-hero">
+        <div class="hero-meta">
+          <h2><i data-lucide="mail-check" style="color: #8b5cf6; vertical-align: middle;"></i> Hệ Thống Mail Server Đa Miền (Cổng 2525)</h2>
+          <p>
+            Triển khai giao thức <strong>SMTP (RFC 5321)</strong> hỗ trợ chuyển tiếp thư điện tử đa miền:
+            <br>
+            • Miền 1: <strong>@iot-network.local</strong> (Trạm thiết bị &amp; Cảnh báo tự động).
+            <br>
+            • Miền 2: <strong>@monitoring-lab.vn</strong> (Trung tâm điều hành &amp; Quản trị viên mạng).
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button id="btnOpenComposeMail" class="btn btn-primary admin-only">
+            <i data-lucide="pen-tool"></i> Soạn Thư Mới (SMTP)
+          </button>
+          <button id="btnTriggerAlertMail" class="btn btn-danger admin-only" title="Mô phỏng sự cố cảm biến vượt ngưỡng và tự động gửi email cảnh báo">
+            <i data-lucide="zap"></i> Kích Hoạt Cảnh Báo Mail Tự Động
+          </button>
+        </div>
+      </section>
+
+      <!-- Webmail Client Layout -->
+      <div class="mail-layout">
+        <!-- Mail Accounts & Folders Sidebar -->
+        <aside class="mail-sidebar">
+          <div style="font-weight: 700; font-size: 0.9rem; margin-bottom: 12px; color: var(--text-muted);">
+            LỌC THEO TÊN MIỀN (DOMAINS)
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <button class="btn btn-secondary active-mail-filter" data-domain="all" style="justify-content: flex-start;">
+              <i data-lucide="inbox"></i> Tất cả hộp thư
+            </button>
+            <button class="btn btn-secondary" data-domain="monitoring-lab.vn" style="justify-content: flex-start;">
+              <i data-lucide="at-sign" style="color: #38bdf8;"></i> @monitoring-lab.vn
+            </button>
+            <button class="btn btn-secondary" data-domain="iot-network.local" style="justify-content: flex-start;">
+              <i data-lucide="at-sign" style="color: #10b981;"></i> @iot-network.local
+            </button>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color);">
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; margin-bottom: 8px;">
+              THÔNG SỐ MÁY CHỦ SMTP:
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-sub); line-height: 1.6;">
+              • Host: <code>127.0.0.1</code><br>
+              • Cổng: <code>2525</code><br>
+              • Auth: Disabled (Nội bộ Lab)<br>
+              • Relay: Multi-domain routing
+            </p>
+          </div>
+        </aside>
+
+        <!-- Mail List View -->
+        <div class="mail-list">
+          <div class="card-header" style="padding: 16px; border-bottom: 1px solid var(--border-color);">
+            <div class="card-title" style="font-size: 0.95rem;">
+              <i data-lucide="mail-open"></i> Hộp Thư Đến &amp; Nhật Ký Chuyển Tiếp
+            </div>
+            <div id="mailCountBadge" class="badge badge-normal">0 Thư</div>
+          </div>
+
+          <div id="mailItemsContainer">
+            <!-- Dynamically populated email messages -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ====================================================================
+         TAB 4: NETWORK ARCHITECTURE & COURSE REPORT
+         ==================================================================== -->
+    <main id="tab-architecture" class="tab-content" style="display: none;">
+      <section class="card" style="margin-bottom: 24px;">
+        <div class="card-header">
+          <div class="card-title">
+            <i data-lucide="git-merge" style="color: var(--accent-color);"></i>
+            <span>Sơ Đồ Kiến Trúc Hệ Thống &amp; Luồng Giao Thức Mạng</span>
+          </div>
+          <button id="btnDownloadTopology" class="btn btn-secondary">
+            <i data-lucide="image"></i> Tải Sơ Đồ SVG
+          </button>
+        </div>
+
+        <div style="background: #020617; border-radius: var(--radius-sm); padding: 16px; text-align: center; border: 1px solid var(--border-color);">
+          <img src="assets/images/topology.svg" alt="Sơ đồ mạng" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+      </section>
+
+      <!-- Detailed Explanation of Protocols for Defense/Grading -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <i data-lucide="book-open" style="color: var(--status-normal);"></i>
+            <span>Giải Trình Kỹ Thuật Các Giao Thức Mạng Phục Vụ Bảo Vệ BTL</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+          <div style="background: var(--bg-primary); padding: 18px; border-radius: var(--radius-sm); border-left: 3px solid var(--accent-color);">
+            <h3 style="color: var(--text-main); font-size: 1rem; margin-bottom: 8px;">1. Giao Thức HTTP &amp; SSE (:3000)</h3>
+            <p>
+              • <strong>HTTP RESTful</strong>: Cung cấp các phương thức chuẩn <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code> cho phép E-Form thao tác dữ liệu thiết bị viễn trắc.
+              <br><br>
+              • <strong>Server-Sent Events (SSE)</strong>: Kênh truyền tải đơn hướng liên tục từ Server đến Client qua kết nối HTTP keep-alive, giúp trang web biến thành "Web Động" cập nhật dữ liệu tự động mà không cần Polling tiêu tốn tài nguyên.
+            </p>
+          </div>
+
+          <div style="background: var(--bg-primary); padding: 18px; border-radius: var(--radius-sm); border-left: 3px solid #f59e0b;">
+            <h3 style="color: var(--text-main); font-size: 1rem; margin-bottom: 8px;">2. Giao Thức FTP Server (:2121)</h3>
+            <p>
+              • Tuân thủ đặc tả <strong>RFC 959</strong> sử dụng 2 kênh kết nối: Kênh điều khiển (Control Connection) trên cổng 2121 và Kênh dữ liệu (Data Connection - Passive Mode).
+              <br><br>
+              • <strong>Phân quyền bảo mật</strong>: Hệ thống xác thực bằng lệnh <code>USER</code> và <code>PASS</code>, cô lập tài khoản Guest trong thư mục <code>/public</code> chỉ có quyền Đọc (RETR), tài khoản Admin có toàn quyền Ghi/Xóa (STOR, DELE).
+            </p>
+          </div>
+
+          <div style="background: var(--bg-primary); padding: 18px; border-radius: var(--radius-sm); border-left: 3px solid #8b5cf6;">
+            <h3 style="color: var(--text-main); font-size: 1rem; margin-bottom: 8px;">3. Giao Thức SMTP Mail Đa Miền (:2525)</h3>
+            <p>
+              • Tuân thủ đặc tả <strong>RFC 5321</strong> thực hiện bắt tay SMTP (HELO/EHLO, MAIL FROM, RCPT TO, DATA, QUIT).
+              <br><br>
+              • <strong>Hệ thống Đa Miền</strong>: Bộ định tuyến SMTP tiếp nhận và phân phối thư cho cả 2 tên miền <code>@iot-network.local</code> và <code>@monitoring-lab.vn</code>, liên kết trực tiếp với cơ chế tự động gửi cảnh báo khi viễn trắc vượt ngưỡng an toàn.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <!-- ====================================================================
+       MODAL 1: E-FORM THÊM THIẾT BỊ MỚI (CRUD)
+       ==================================================================== -->
+  <div id="modalAddDevice" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 style="font-size: 1.1rem; font-weight: 700;">
+          <i data-lucide="plus-circle" style="color: var(--accent-color); vertical-align: middle;"></i> 
+          Thêm Thiết Bị Viễn Trắc Mới (E-Form)
+        </h3>
+        <button class="btn-icon btn-close-modal"><i data-lucide="x"></i></button>
+      </div>
+      <form id="formAddDevice">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputDevName">Tên Thiết Bị / Cảm Biến *</label>
+            <input type="text" id="inputDevName" class="form-control" placeholder="Ví dụ: Cảm Biến Nhiệt Rack-03" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="selectDevType">Loại Cảm Biến *</label>
+              <select id="selectDevType" class="form-control" required>
+                <option value="Temperature">Nhiệt độ (°C)</option>
+                <option value="Humidity">Độ ẩm (%)</option>
+                <option value="Network Bandwidth">Tải băng thông (Mbps)</option>
+                <option value="CPU Load">Tải CPU (%)</option>
+                <option value="Pressure">Áp suất (hPa)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inputDevLocation">Vị Trí Lắp Đặt</label>
+              <input type="text" id="inputDevLocation" class="form-control" placeholder="Ví dụ: Tầng 3 Phòng Lab">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="inputMinThreshold">Ngưỡng An Toàn Min</label>
+              <input type="number" id="inputMinThreshold" class="form-control" value="15">
+            </div>
+            <div class="form-group">
+              <label for="inputMaxThreshold">Ngưỡng Cảnh Báo Max *</label>
+              <input type="number" id="inputMaxThreshold" class="form-control" value="75" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="inputIpAddress">Địa Chỉ IP Mạng</label>
+              <input type="text" id="inputIpAddress" class="form-control" placeholder="192.168.1.x">
+            </div>
+            <div class="form-group">
+              <label for="inputMacAddress">Địa Chỉ MAC</label>
+              <input type="text" id="inputMacAddress" class="form-control" placeholder="00:1A:2B:3C:4D:5E">
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-close-modal">Hủy</button>
+          <button type="submit" class="btn btn-primary"><i data-lucide="check"></i> Lưu Thiết Bị</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 2: E-FORM ĐIỀU KHIỂN & CẤU HÌNH THIẾT BỊ
+       ==================================================================== -->
+  <div id="modalDeviceControl" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 style="font-size: 1.1rem; font-weight: 700;">
+          <i data-lucide="sliders" style="color: var(--accent-color); vertical-align: middle;"></i> 
+          Điều Khiển Thiết Bị: <span id="ctrlDevName">DEV</span>
+        </h3>
+        <button class="btn-icon btn-close-modal"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="ctrlDevId">
+        <div style="background: var(--bg-primary); padding: 14px; border-radius: var(--radius-sm); margin-bottom: 16px;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 6px;">
+            <span style="color: var(--text-muted);">Giá trị hiện tại:</span>
+            <strong id="ctrlDevCurrentValue" style="color: var(--accent-color);">--</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+            <span style="color: var(--text-muted);">Trạng thái hệ thống:</span>
+            <span id="ctrlDevStatusBadge" class="badge badge-normal">Bình thường</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Lệnh Nghiệp Vụ Tức Thì (Commands):</label>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button id="btnCmdCoolDown" class="btn btn-secondary" style="flex: 1;">
+              <i data-lucide="fan"></i> Bật Quạt Hạ Nhiệt
+            </button>
+            <button id="btnCmdReboot" class="btn btn-secondary" style="flex: 1;">
+              <i data-lucide="rotate-ccw"></i> Khởi Động Lại
+            </button>
+            <button id="btnCmdTriggerWarning" class="btn btn-danger" style="flex: 1;">
+              <i data-lucide="alert-octagon"></i> Kích Hoạt Cảnh Báo
+            </button>
+          </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 18px 0;">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ctrlMaxThreshold">Cập Nhật Ngưỡng Max</label>
+            <input type="number" id="ctrlMaxThreshold" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="ctrlLocation">Cập Nhật Vị Trí</label>
+            <input type="text" id="ctrlLocation" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-close-modal">Đóng</button>
+        <button type="button" id="btnSaveDeviceParams" class="btn btn-primary">
+          <i data-lucide="save"></i> Cập Nhật Tham Số
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 3: BẮN GÓI TIN VIỄN TRẮC API IoT
+       ==================================================================== -->
+  <div id="modalPushApi" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 style="font-size: 1.1rem; font-weight: 700;">
+          <i data-lucide="upload-cloud" style="color: var(--accent-color); vertical-align: middle;"></i> 
+          Mô Phỏng Gửi Gói Tin IoT (POST /api/telemetry/push)
+        </h3>
+        <button class="btn-icon btn-close-modal"><i data-lucide="x"></i></button>
+      </div>
+      <form id="formPushApi">
+        <div class="modal-body">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+            Mô phỏng cảm biến vật lý ESP32 hoặc thiết bị đo mạng gửi bản tin viễn trắc HTTP POST trực tiếp vào Back-end.
+          </p>
+          <div class="form-group">
+            <label for="selectPushDevice">Chọn Thiết Bị Mục Tiêu *</label>
+            <select id="selectPushDevice" class="form-control" required></select>
+          </div>
+          <div class="form-group">
+            <label for="inputPushValue">Giá Trị Cảm Biến Đo Mới *</label>
+            <input type="number" step="0.1" id="inputPushValue" class="form-control" placeholder="Ví dụ: 88.5" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-close-modal">Hủy</button>
+          <button type="submit" class="btn btn-primary"><i data-lucide="send"></i> Gửi Gói Tin API</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 4: SOẠN VÀ GỬI THƯ SMTP ĐA MIỀN
+       ==================================================================== -->
+  <div id="modalComposeMail" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 style="font-size: 1.1rem; font-weight: 700;">
+          <i data-lucide="pen-tool" style="color: #8b5cf6; vertical-align: middle;"></i> 
+          Soạn Thư Mới (Gửi Qua Cổng SMTP 2525)
+        </h3>
+        <button class="btn-icon btn-close-modal"><i data-lucide="x"></i></button>
+      </div>
+      <form id="formComposeMail">
+        <div class="modal-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mailFrom">Người Gửi (From) *</label>
+              <select id="mailFrom" class="form-control" required>
+                <option value="admin@iot-network.local">admin@iot-network.local</option>
+                <option value="sensor-alert@iot-network.local">sensor-alert@iot-network.local</option>
+                <option value="manager@monitoring-lab.vn">manager@monitoring-lab.vn</option>
+                <option value="technician@monitoring-lab.vn">technician@monitoring-lab.vn</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mailTo">Người Nhận (To) *</label>
+              <input type="email" id="mailTo" class="form-control" placeholder="manager@monitoring-lab.vn" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mailSubject">Tiêu Đề Thư (Subject) *</label>
+            <input type="text" id="mailSubject" class="form-control" placeholder="Thông báo kiểm tra định kỳ hệ thống mạng" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mailBody">Nội Dung Thư (Body) *</label>
+            <textarea id="mailBody" rows="5" class="form-control" placeholder="Nhập nội dung thư điện tử..." required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-close-modal">Hủy</button>
+          <button type="submit" class="btn btn-primary" style="background:#8b5cf6;"><i data-lucide="send"></i> Gửi Thư SMTP</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 5: CUSTOMIZE GIAO DIỆN & BẬT/TẮT WIDGETS
+       ==================================================================== -->
+  <div id="modalCustomize" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 style="font-size: 1.1rem; font-weight: 700;">
+          <i data-lucide="sliders" style="color: var(--accent-color); vertical-align: middle;"></i> 
+          Tùy Biến Giao Diện &amp; Hiển Thị (Customize)
+        </h3>
+        <button class="btn-icon btn-close-modal"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <!-- Accent Color Scheme Picker -->
+        <div class="form-group">
+          <label>Màu Sắc Chủ Đạo (Accent Palette):</label>
+          <div style="display: flex; gap: 10px; margin-top: 8px;">
+            <button class="btn btn-secondary accent-picker-btn" data-accent="cyan" style="border-color:#00f0ff; color:#00f0ff;">
+              ● Cyan
+            </button>
+            <button class="btn btn-secondary accent-picker-btn" data-accent="emerald" style="border-color:#10b981; color:#10b981;">
+              ● Emerald
+            </button>
+            <button class="btn btn-secondary accent-picker-btn" data-accent="violet" style="border-color:#8b5cf6; color:#8b5cf6;">
+              ● Violet
+            </button>
+            <button class="btn btn-secondary accent-picker-btn" data-accent="orange" style="border-color:#f97316; color:#f97316;">
+              ● Orange
+            </button>
+          </div>
+        </div>
+
+        <hr style="border:0; border-top:1px solid var(--border-color); margin:18px 0;">
+
+        <!-- Toggle Dashboard Widgets -->
+        <div class="form-group">
+          <label>Ẩn / Hiện Các Khối Widget Trên Dashboard:</label>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
+            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; color:var(--text-main);">
+              <input type="checkbox" id="chkWidgetKpi" checked> Khối Thẻ Thống Kê KPI Tổng Quan
+            </label>
+            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; color:var(--text-main);">
+              <input type="checkbox" id="chkWidgetCharts" checked> Khối Biểu Đồ Viễn Trắc &amp; Tỷ Lệ An Toàn
+            </label>
+            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; color:var(--text-main);">
+              <input type="checkbox" id="chkWidgetMedia" checked> Khối Camera CCTV &amp; Hình Ảnh Trạm IoT
+            </label>
+            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; color:var(--text-main);">
+              <input type="checkbox" id="chkWidgetTable" checked> Khối Bảng Dữ Liệu Cảm Biến Thời Gian Thực
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-close-modal">Hoàn Tất</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 6: CHI TIẾT EMAIL ĐÃ NHẬN
+       ==================================================================== -->
+  <div id="modalViewMail" class="modal-overlay">
+    <div class="modal-box" style="max-width: 680px;">
+      <div class="modal-header">
+        <h3 id="viewMailSubject" style="font-size: 1.05rem; font-weight: 700; color: var(--accent-color);">Tiêu đề thư</h3>
+        <button class="btn-icon btn-close-modal"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <div style="background: var(--bg-primary); padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 14px; font-size: 0.85rem;">
+          <div style="margin-bottom: 4px;"><strong>Từ (From):</strong> <span id="viewMailFrom"></span></div>
+          <div style="margin-bottom: 4px;"><strong>Đến (To):</strong> <span id="viewMailTo"></span></div>
+          <div><strong>Thời gian (Date):</strong> <span id="viewMailDate"></span></div>
+        </div>
+        <div style="white-space: pre-wrap; font-family: inherit; font-size: 0.9rem; line-height: 1.6; color: var(--text-main);" id="viewMailBody">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-close-modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- App Scripts -->
+  <script src="js/charts.js"></script>
+  <script src="js/devices.js"></script>
+  <script src="js/ftp.js"></script>
+  <script src="js/mail.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

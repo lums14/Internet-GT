@@ -1,0 +1,27 @@
+{
+  "name": "iot-network-protocol-hub",
+  "version": "1.0.0",
+  "description": "Bài tập lớn môn Internet và các giao thức - Web động IoT, FTP Server & Mail Server Đa Miền",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "iot",
+    "protocols",
+    "ftp",
+    "smtp",
+    "web-dynamic"
+  ],
+  "author": "Sinh vien BTL Internet & Protocols",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ftp-srv": "^4.6.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.16",
+    "smtp-server": "^3.13.6"
+  }
+}
