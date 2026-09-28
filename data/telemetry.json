@@ -1,142 +1,142 @@
 [
   {
-    "timestamp": "16:29:44",
-    "avgTemp": 71.6,
-    "avgHumidity": 90.5,
-    "networkBandwidth": 78.7,
-    "cpuLoad": 86.6
+    "timestamp": "16:32:08",
+    "avgTemp": 72.2,
+    "avgHumidity": 94.9,
+    "networkBandwidth": 74.3,
+    "cpuLoad": 89.2
   },
   {
-    "timestamp": "16:29:47",
-    "avgTemp": 71.6,
-    "avgHumidity": 90.5,
-    "networkBandwidth": 77.9,
-    "cpuLoad": 87.5
+    "timestamp": "16:32:11",
+    "avgTemp": 72.6,
+    "avgHumidity": 94,
+    "networkBandwidth": 74.3,
+    "cpuLoad": 90.1
   },
   {
-    "timestamp": "16:29:50",
-    "avgTemp": 72.8,
-    "avgHumidity": 91.7,
-    "networkBandwidth": 76.6,
-    "cpuLoad": 86.7
-  },
-  {
-    "timestamp": "16:29:53",
-    "avgTemp": 72.8,
-    "avgHumidity": 91.7,
-    "networkBandwidth": 75.3,
-    "cpuLoad": 86.7
-  },
-  {
-    "timestamp": "16:29:56",
-    "avgTemp": 72.8,
-    "avgHumidity": 91.7,
-    "networkBandwidth": 74.5,
-    "cpuLoad": 86.9
-  },
-  {
-    "timestamp": "16:29:59",
-    "avgTemp": 72.8,
-    "avgHumidity": 91.7,
-    "networkBandwidth": 74.7,
-    "cpuLoad": 88.4
-  },
-  {
-    "timestamp": "16:30:02",
-    "avgTemp": 72.3,
-    "avgHumidity": 93.1,
-    "networkBandwidth": 74.9,
-    "cpuLoad": 88.7
-  },
-  {
-    "timestamp": "16:30:05",
-    "avgTemp": 71.7,
-    "avgHumidity": 93.1,
-    "networkBandwidth": 74.9,
-    "cpuLoad": 88.7
-  },
-  {
-    "timestamp": "16:30:08",
-    "avgTemp": 71.8,
-    "avgHumidity": 93.1,
-    "networkBandwidth": 74.9,
-    "cpuLoad": 88.7
-  },
-  {
-    "timestamp": "16:30:11",
-    "avgTemp": 73,
-    "avgHumidity": 93.1,
-    "networkBandwidth": 74.9,
-    "cpuLoad": 88.9
-  },
-  {
-    "timestamp": "16:30:14",
-    "avgTemp": 73.2,
-    "avgHumidity": 94.7,
-    "networkBandwidth": 74.9,
+    "timestamp": "16:32:14",
+    "avgTemp": 72.7,
+    "avgHumidity": 93.4,
+    "networkBandwidth": 75.1,
     "cpuLoad": 89.9
   },
   {
-    "timestamp": "16:30:17",
-    "avgTemp": 73.4,
-    "avgHumidity": 94.7,
-    "networkBandwidth": 74,
-    "cpuLoad": 90.5
+    "timestamp": "16:32:17",
+    "avgTemp": 73.3,
+    "avgHumidity": 93.4,
+    "networkBandwidth": 75.3,
+    "cpuLoad": 89.9
   },
   {
-    "timestamp": "16:30:20",
-    "avgTemp": 73.6,
-    "avgHumidity": 94.7,
-    "networkBandwidth": 72.7,
-    "cpuLoad": 90.5
+    "timestamp": "16:32:20",
+    "avgTemp": 73.7,
+    "avgHumidity": 94,
+    "networkBandwidth": 75.3,
+    "cpuLoad": 89.7
   },
   {
-    "timestamp": "16:30:23",
-    "avgTemp": 72.5,
-    "avgHumidity": 94.7,
-    "networkBandwidth": 72.7,
-    "cpuLoad": 91.4
+    "timestamp": "16:32:23",
+    "avgTemp": 73.2,
+    "avgHumidity": 94.3,
+    "networkBandwidth": 74.4,
+    "cpuLoad": 89.7
   },
   {
-    "timestamp": "16:30:26",
-    "avgTemp": 71.8,
-    "avgHumidity": 94.5,
-    "networkBandwidth": 71.5,
-    "cpuLoad": 91.4
+    "timestamp": "16:32:26",
+    "avgTemp": 73.5,
+    "avgHumidity": 94.1,
+    "networkBandwidth": 73.2,
+    "cpuLoad": 89.7
   },
   {
-    "timestamp": "16:30:29",
-    "avgTemp": 72.2,
-    "avgHumidity": 95,
-    "networkBandwidth": 71.5,
-    "cpuLoad": 91.7
+    "timestamp": "16:32:29",
+    "avgTemp": 73.3,
+    "avgHumidity": 94.1,
+    "networkBandwidth": 73,
+    "cpuLoad": 90.7
   },
   {
-    "timestamp": "16:30:32",
-    "avgTemp": 72.2,
-    "avgHumidity": 95,
-    "networkBandwidth": 71.8,
-    "cpuLoad": 91.7
+    "timestamp": "16:32:32",
+    "avgTemp": 73.3,
+    "avgHumidity": 94.1,
+    "networkBandwidth": 73.1,
+    "cpuLoad": 92.3
   },
   {
-    "timestamp": "16:30:35",
-    "avgTemp": 72.1,
-    "avgHumidity": 95,
-    "networkBandwidth": 71,
-    "cpuLoad": 90.4
+    "timestamp": "16:32:35",
+    "avgTemp": 73.2,
+    "avgHumidity": 94.1,
+    "networkBandwidth": 73.5,
+    "cpuLoad": 92.2
   },
   {
-    "timestamp": "16:30:38",
-    "avgTemp": 72.3,
-    "avgHumidity": 95,
-    "networkBandwidth": 69.9,
-    "cpuLoad": 90.4
+    "timestamp": "16:32:38",
+    "avgTemp": 73.2,
+    "avgHumidity": 94.8,
+    "networkBandwidth": 73.5,
+    "cpuLoad": 92.2
   },
   {
-    "timestamp": "16:30:41",
-    "avgTemp": 73.1,
-    "avgHumidity": 95,
-    "networkBandwidth": 71.5,
-    "cpuLoad": 90.4
+    "timestamp": "16:32:41",
+    "avgTemp": 73.9,
+    "avgHumidity": 94.8,
+    "networkBandwidth": 75,
+    "cpuLoad": 93
+  },
+  {
+    "timestamp": "16:32:44",
+    "avgTemp": 74.2,
+    "avgHumidity": 94.8,
+    "networkBandwidth": 75,
+    "cpuLoad": 93.9
+  },
+  {
+    "timestamp": "16:32:47",
+    "avgTemp": 74.1,
+    "avgHumidity": 94.8,
+    "networkBandwidth": 75.9,
+    "cpuLoad": 94.1
+  },
+  {
+    "timestamp": "16:32:50",
+    "avgTemp": 73.9,
+    "avgHumidity": 94.4,
+    "networkBandwidth": 75.9,
+    "cpuLoad": 93.8
+  },
+  {
+    "timestamp": "16:32:54",
+    "avgTemp": 73.9,
+    "avgHumidity": 93.7,
+    "networkBandwidth": 75.9,
+    "cpuLoad": 95.1
+  },
+  {
+    "timestamp": "16:32:57",
+    "avgTemp": 73.9,
+    "avgHumidity": 93.2,
+    "networkBandwidth": 75.5,
+    "cpuLoad": 95.2
+  },
+  {
+    "timestamp": "16:33:00",
+    "avgTemp": 73.5,
+    "avgHumidity": 93.2,
+    "networkBandwidth": 75.5,
+    "cpuLoad": 95.2
+  },
+  {
+    "timestamp": "16:33:03",
+    "avgTemp": 73,
+    "avgHumidity": 94.3,
+    "networkBandwidth": 76.6,
+    "cpuLoad": 95.2
+  },
+  {
+    "timestamp": "16:33:06",
+    "avgTemp": 73.7,
+    "avgHumidity": 94.3,
+    "networkBandwidth": 76.6,
+    "cpuLoad": 94
   }
 ]
