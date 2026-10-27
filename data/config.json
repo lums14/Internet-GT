@@ -1,0 +1,64 @@
+{
+  "comm": {
+    "baudrate": "115200",
+    "databits": 8,
+    "parity": "None",
+    "stopbits": 1,
+    "gatewayIp": "192.168.1.1",
+    "subnetMask": "255.255.255.0",
+    "modbusAddress": 1,
+    "pollingInterval": 3,
+    "timeoutMs": 1500,
+    "retryLimit": 3,
+    "transmissionMode": "RS485 Half-Duplex",
+    "dataBits": 8,
+    "stopBits": 1
+  },
+  "drivers": [
+    {
+      "id": "DRV-ESP32",
+      "name": "ESP32-S3 Modbus RTU / RS485 Master Driver",
+      "version": "2.4.1",
+      "status": "Active",
+      "chipset": "ESP32-WROOM-32D / MAX485",
+      "bus": "UART2 (GPIO16/GPIO17)",
+      "lastSync": "2026-10-16T04:11:22.683Z"
+    },
+    {
+      "id": "DRV-CISCO",
+      "name": "Cisco IOS CLI Automation & SNMP Adapter",
+      "version": "1.8.0",
+      "status": "Active",
+      "chipset": "Catalyst 9300 / IOS-XE 17.6",
+      "bus": "SSH (Port 22) / SNMPv2c",
+      "lastSync": "2026-10-16T04:11:22.683Z"
+    },
+    {
+      "id": "DRV-FORTINET",
+      "name": "Fortinet FortiGate REST API Security Connector",
+      "version": "3.1.0",
+      "status": "Active",
+      "chipset": "FortiGate 60F / FortiOS 7.2",
+      "bus": "HTTPS REST API (Port 8443)",
+      "lastSync": "2026-10-16T04:11:22.683Z"
+    },
+    {
+      "id": "DRV-SENSORS",
+      "name": "DHT22 / BME280 High-Precision Sensor Driver",
+      "version": "4.0.2",
+      "status": "Active",
+      "chipset": "Aosong DHT22 & Bosch BME280",
+      "bus": "1-Wire (GPIO4) / I2C (0x76)",
+      "lastSync": "2026-10-16T04:11:22.683Z"
+    },
+    {
+      "id": "DRV-MODBUS-TCP",
+      "name": "Modbus/TCP Industrial Ethernet Gateway Adapter",
+      "version": "1.2.5",
+      "status": "Active",
+      "chipset": "W5500 SPI Ethernet Controller",
+      "bus": "TCP/IP (Port 502)",
+      "lastSync": "2026-10-16T04:11:22.683Z"
+    }
+  ]
+}

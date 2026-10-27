@@ -1,10 +1,1000 @@
 [
   {
+    "id": "mail-1793102481234",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 19:01:21 27/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-27T12:01:21.234Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792413222797",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.9 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.9 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 19:33:42 19/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-19T12:33:42.797Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792413180730",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.7 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.7 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 19:33:00 19/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-19T12:33:00.730Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792140069318",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.4 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.4 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 15:41:09 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T08:41:09.318Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792138143351",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (75.9 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.9 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 15:09:03 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T08:09:03.351Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792135602913",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (91.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 91.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:26:42 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T07:26:42.913Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792135560824",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:26:00 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T07:26:00.824Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792135380407",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.4 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.4 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:23:00 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T07:23:00.407Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792135278201",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.9 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.9 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:21:18 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T07:21:18.201Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792134893274",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.9 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.9 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:14:53 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T07:14:53.274Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792134860248",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (91.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 91.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:14:20 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T07:14:20.248Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792132463502",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (91 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 91 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 13:34:23 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T06:34:23.502Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792131705761",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F vượt ngưỡng (86.4 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 86.4 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 13:21:45 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T06:21:45.761Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792131002324",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 13:10:01 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T06:10:02.324Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1792125398053",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (95.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 95.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 11:36:37 16/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-16T04:36:38.053Z",
+    "read": true,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790920349629",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.1 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.1 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 12:52:29 2/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-02T05:52:29.629Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790920247379",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.4 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.4 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 12:50:47 2/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-02T05:50:47.379Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790915082674",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (91.1 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 91.1 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 11:24:42 2/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-02T04:24:42.674Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790854852807",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.7 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.7 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 18:40:52 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T11:40:52.807Z",
+    "read": true,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790854810742",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (91 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 91 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 18:40:10 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T11:40:10.742Z",
+    "read": true,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790853280213",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (91.1 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 91.1 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 18:14:40 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T11:14:40.213Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790853183978",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.3 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.3 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 18:13:03 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T11:13:03.978Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790853141854",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.6 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.6 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 18:12:21 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T11:12:21.854Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790851430711",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.9 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.9 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 17:43:50 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T10:43:50.711Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790851151078",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.3 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.3 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 17:39:10 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T10:39:11.078Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790850077717",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F vượt ngưỡng (85.6 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.6 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 17:21:17 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T10:21:17.717Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790850023537",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F vượt ngưỡng (85.9 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.9 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 17:20:23 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T10:20:23.537Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790848625334",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:57:05 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T09:57:05.334Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790848493112",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (91.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 91.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:54:52 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T09:54:53.112Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790848451018",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.1 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.1 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:54:10 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T09:54:11.018Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790847810503",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.8 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.8 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:43:30 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T09:43:30.504Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790847750454",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:42:30 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T09:42:30.454Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790846334294",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F vượt ngưỡng (85.3 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.3 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 16:18:54 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T09:18:54.294Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790842351520",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F vượt ngưỡng (85.2 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.2 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 15:12:31 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T08:12:31.521Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790842207244",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.4 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.4 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 15:10:07 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T08:10:07.244Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790841604356",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến UPS Bộ Lưu Điện APC Smart-UPS 3000 vượt ngưỡng (66.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106)\r\nVị trí: Phòng Nguồn Kỹ Thuật\r\nGiá trị đo được: 66.2 °C\r\nNgưỡng cảnh báo: 65 °C\r\nĐịa chỉ IP: 192.168.1.80\r\nThời gian phát hiện: 15:00:04 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T08:00:04.356Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790841544150",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến UPS Bộ Lưu Điện APC Smart-UPS 3000 vượt ngưỡng (66.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106)\r\nVị trí: Phòng Nguồn Kỹ Thuật\r\nGiá trị đo được: 66.2 °C\r\nNgưỡng cảnh báo: 65 °C\r\nĐịa chỉ IP: 192.168.1.80\r\nThời gian phát hiện: 14:59:04 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T07:59:04.150Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790840896156",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:48:16 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T07:48:16.156Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790840610439",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 vượt ngưỡng (80.1 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 80.1 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 14:43:30 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T07:43:30.439Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790840117042",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.9 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.9 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:35:16 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T07:35:17.042Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790840061304",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (91 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 91 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:34:21 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T07:34:21.304Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790840025192",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.8 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.8 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:33:45 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T07:33:45.192Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790839989123",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.8 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.8 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:33:08 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T07:33:09.123Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790839959112",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:32:38 1/10/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-10-01T07:32:39.112Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790758161584",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.7 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.7 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 15:49:21 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T08:49:21.584Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790758095363",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.6 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.6 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 15:48:15 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T08:48:15.366Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790758017204",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.6 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.6 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 15:46:57 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T08:46:57.204Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790757821362",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.7 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.7 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 15:43:41 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T08:43:41.362Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790755054381",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:57:34 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T07:57:34.382Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790754600331",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 vượt ngưỡng (80.5 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 80.5 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 14:50:00 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T07:50:00.331Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790753427398",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.1 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.1 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:30:27 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T07:30:27.398Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790753316059",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.6 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.6 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:28:35 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T07:28:36.059Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790753280024",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.3 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.3 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:27:59 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T07:28:00.024Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790752110203",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.6 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.6 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:08:29 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T07:08:30.203Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790752073947",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.4 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.4 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 14:07:53 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T07:07:53.947Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790751277035",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F vượt ngưỡng (86 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 86 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 13:54:36 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:54:37.036Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790751072520",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 13:51:12 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:51:12.520Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790751009429",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 13:50:09 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:50:09.429Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790749255882",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (75.9 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.9 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 13:20:55 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:20:55.882Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790749135626",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (75.1 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.1 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 13:18:55 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:18:55.626Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790749087534",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (75.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.2 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 13:18:07 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:18:07.534Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790749045406",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (75.7 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.7 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 13:17:25 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:17:25.406Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790749012351",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 vượt ngưỡng (80.2 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 80.2 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 13:16:52 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:16:52.351Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748801830",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (76.3 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 76.3 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 13:13:21 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:13:21.830Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748759767",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (76.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 76.2 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 13:12:39 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:12:39.767Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748666519",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 vượt ngưỡng (80.8 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 80.8 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 13:11:06 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:11:06.519Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748588283",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (75.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.2 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 13:09:48 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:09:48.283Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748531178",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha vượt ngưỡng (75.5 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.5 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 13:08:51 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:08:51.178Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748471048",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.4 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.4 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 13:07:50 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:07:51.048Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748434711",
+    "from": "IoT Rule Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[VI PHẠM QUY TẮC CẢNH BÁO: Cảnh báo Nhiệt độ Quá tải (> 75°C)] Server Rack Cluster Alpha vượt ngưỡng!",
+    "body": "HỆ THỐNG PHÁT HIỆN SỰ CỐ VI PHẠM QUY TẮC:\r\n\r\nQuy tắc áp dụng: Cảnh báo Nhiệt độ Quá tải (> 75°C) (Temperature > 75°C)\r\nThiết bị phát hiện: Server Rack Cluster Alpha (DEV-102)\r\nGiá trị đo: 79.2 °C (Ngưỡng: 75)\r\nHành động: Tự động BẬT Relay & gửi email thông báo\r\nThời gian: 13:07:14 30/9/2026\r\n",
+    "date": "2026-09-30T06:07:14.711Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748416910",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.3 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.3 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 13:06:56 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:06:56.910Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748377776",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 13:06:17 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:06:17.776Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748341650",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 vượt ngưỡng (81.6 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 81.6 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 13:05:41 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:05:41.650Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748311627",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 vượt ngưỡng (81.1 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 81.1 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 13:05:11 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:05:11.627Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790748139750",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 vượt ngưỡng (81.6 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 81.6 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 13:02:19 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T06:02:19.750Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790747366326",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.1 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.1 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 12:49:26 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T05:49:26.326Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790744764753",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (90.3 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.3 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 12:06:04 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T05:06:04.753Z",
+    "read": true,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790742655320",
+    "from": "IoT Auto Sentinel <sensor-alert@iot-network.local>",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 vượt ngưỡng (79.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\r\n\r\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 79.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 11:30:55 30/9/2026\r\n\r\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T04:30:55.320Z",
+    "read": true,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790740623518",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106) vượt ngưỡng (65.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106)\r\nVị trí: Phòng Nguồn Kỹ Thuật\r\nGiá trị đo được: 65.2 °C\r\nNgưỡng cảnh báo: 65 °C\r\nĐịa chỉ IP: 192.168.1.80\r\nThời gian phát hiện: 10:57:03 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:57:03.518Z",
+    "read": true,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790739886815",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F (DEV-104) vượt ngưỡng (85.5 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.5 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 10:44:46 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:44:46.815Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790739847700",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F (DEV-104) vượt ngưỡng (85.2 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.2 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 10:44:07 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:44:07.700Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790739447667",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106) vượt ngưỡng (65.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106)\r\nVị trí: Phòng Nguồn Kỹ Thuật\r\nGiá trị đo được: 65.2 °C\r\nNgưỡng cảnh báo: 65 °C\r\nĐịa chỉ IP: 192.168.1.80\r\nThời gian phát hiện: 10:37:27 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:37:27.667Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790739330398",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106) vượt ngưỡng (65.8 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106)\r\nVị trí: Phòng Nguồn Kỹ Thuật\r\nGiá trị đo được: 65.8 °C\r\nNgưỡng cảnh báo: 65 °C\r\nĐịa chỉ IP: 192.168.1.80\r\nThời gian phát hiện: 10:35:30 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:35:30.398Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790739285290",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106) vượt ngưỡng (66 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106)\r\nVị trí: Phòng Nguồn Kỹ Thuật\r\nGiá trị đo được: 66 °C\r\nNgưỡng cảnh báo: 65 °C\r\nĐịa chỉ IP: 192.168.1.80\r\nThời gian phát hiện: 10:34:45 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:34:45.290Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790739183051",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.5 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.5 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 10:33:02 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:33:03.051Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790739116903",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (76 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 76 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 10:31:56 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:31:56.903Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790739074813",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.2 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 10:31:14 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:31:14.813Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790738929556",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103) vượt ngưỡng (80.7 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 80.7 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 10:28:49 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:28:49.556Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790738866349",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103) vượt ngưỡng (80.1 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 80.1 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 10:27:46 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:27:46.349Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790738827233",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F (DEV-104) vượt ngưỡng (85.5 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.5 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 10:27:07 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:27:07.233Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790738779103",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F (DEV-104) vượt ngưỡng (85.2 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.2 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 10:26:18 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:26:19.103Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790738300968",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.6 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.6 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 10:18:20 30/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-30T03:18:20.968Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790589559242",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.7 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.7 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 16:59:19 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-28T09:59:19.242Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790589517114",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.5 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.5 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 16:58:36 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-28T09:58:37.114Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790589487035",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.6 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.6 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 16:58:06 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-28T09:58:07.035Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790589450963",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.6 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.6 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 16:57:30 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-28T09:57:30.963Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790589420864",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.2 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.2 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 16:57:00 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-28T09:57:00.864Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790588930642",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (75.4 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 75.4 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 16:48:50 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-28T09:48:50.642Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
+    "id": "mail-1790588521520",
+    "from": "sensor-alert@iot-network.local",
+    "to": "manager@monitoring-lab.vn",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 (DEV-101) vượt ngưỡng (90.7 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.7 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:42:01 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
+    "date": "2026-09-28T09:42:01.520Z",
+    "read": false,
+    "domain": "monitoring-lab.vn"
+  },
+  {
     "id": "mail-1790587504923",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nGateway Firewall Fortinet 60F (DEV-104)\r\nV=E1=BB=8B tr=C3=AD: Tr=E1=BA=A1m =\r\nB=E1=BA=A3o M=E1=BA=ADt M=E1=BA=A1ng\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =\r\n=C4=91=C6=B0=E1=BB=A3c: 85.5 %\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh b=C3=A1o: =\r\n85 %\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.254\r\nTh=E1=BB=9Di gian ph=C3=A1t hi=E1=BB=87n: 16:25:04 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web Dashboard =C4=91=E1=BB=83 ki=E1=BB=83m =\r\ntra v=C3=A0 x=E1=BB=AD l=C3=BD s=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Gateway Firewall Fortinet 60F (DEV-104) vượt ngưỡng (85.5 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Gateway Firewall Fortinet 60F (DEV-104)\r\nVị trí: Trạm Bảo Mật Mạng\r\nGiá trị đo được: 85.5 %\r\nNgưỡng cảnh báo: 85 %\r\nĐịa chỉ IP: 192.168.1.254\r\nThời gian phát hiện: 16:25:04 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:25:04.923Z",
     "read": false,
     "domain": "monitoring-lab.vn"
@@ -13,8 +1003,8 @@
     "id": "mail-1790587228200",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nUPS B=E1=BB=99 L=C6=B0u =C4=90i=E1=BB=87n APC Smart-UPS 3000 (DEV-106)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng Ngu=E1=BB=93n K=E1=BB=B9 Thu=E1=BA=ADt\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =C4=91=C6=B0=E1=BB=A3c: 66.4 =C2=B0C\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh b=C3=A1o: 65 =C2=B0C\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.80\r\nTh=E1=BB=9Di gian ph=C3=A1t =\r\nhi=E1=BB=87n: 16:20:28 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web =\r\nDashboard =C4=91=E1=BB=83 ki=E1=BB=83m tra v=C3=A0 x=E1=BB=AD l=C3=BD =\r\ns=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106) vượt ngưỡng (66.4 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106)\r\nVị trí: Phòng Nguồn Kỹ Thuật\r\nGiá trị đo được: 66.4 °C\r\nNgưỡng cảnh báo: 65 °C\r\nĐịa chỉ IP: 192.168.1.80\r\nThời gian phát hiện: 16:20:28 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:20:28.200Z",
     "read": false,
     "domain": "monitoring-lab.vn"
@@ -23,8 +1013,8 @@
     "id": "mail-1790587189106",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nUPS B=E1=BB=99 L=C6=B0u =C4=90i=E1=BB=87n APC Smart-UPS 3000 (DEV-106)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng Ngu=E1=BB=93n K=E1=BB=B9 Thu=E1=BA=ADt\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =C4=91=C6=B0=E1=BB=A3c: 65.7 =C2=B0C\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh b=C3=A1o: 65 =C2=B0C\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.80\r\nTh=E1=BB=9Di gian ph=C3=A1t =\r\nhi=E1=BB=87n: 16:19:48 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web =\r\nDashboard =C4=91=E1=BB=83 ki=E1=BB=83m tra v=C3=A0 x=E1=BB=AD l=C3=BD =\r\ns=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106) vượt ngưỡng (65.7 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: UPS Bộ Lưu Điện APC Smart-UPS 3000 (DEV-106)\r\nVị trí: Phòng Nguồn Kỹ Thuật\r\nGiá trị đo được: 65.7 °C\r\nNgưỡng cảnh báo: 65 °C\r\nĐịa chỉ IP: 192.168.1.80\r\nThời gian phát hiện: 16:19:48 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:19:49.106Z",
     "read": false,
     "domain": "monitoring-lab.vn"
@@ -33,8 +1023,8 @@
     "id": "mail-1790587014559",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nTr=E1=BA=A1m C=E1=BA=A3m Bi=E1=BA=BFn M=C3=B4i Tr=C6=B0=E1=BB=9Dng IoT =\r\nNode-01 (DEV-103)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng Th=C3=AD Nghi=E1=BB=87m =\r\nInternet T=E1=BA=A7ng 3\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =\r\n=C4=91=C6=B0=E1=BB=A3c: 80.6 %\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh b=C3=A1o: =\r\n80 %\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.2.11\r\nTh=E1=BB=9Di gian =\r\nph=C3=A1t hi=E1=BB=87n: 16:16:54 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp =\r\nWeb Dashboard =C4=91=E1=BB=83 ki=E1=BB=83m tra v=C3=A0 x=E1=BB=AD l=C3=BD =\r\ns=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103) vượt ngưỡng (80.6 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 80.6 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 16:16:54 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:16:54.559Z",
     "read": false,
     "domain": "monitoring-lab.vn"
@@ -43,8 +1033,8 @@
     "id": "mail-1790586493723",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nCore Switch Cisco Catalyst 9300 (DEV-101)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng =\r\nM=C3=A1y Ch=E1=BB=A7 Trung T=C3=A2m\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =\r\n=C4=91=C6=B0=E1=BB=A3c: 55.9 Mbps\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh =\r\nb=C3=A1o: 90 Mbps\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.1\r\nTh=E1=BB=9Di gian ph=C3=A1t hi=E1=BB=87n: 16:08:13 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web Dashboard =C4=91=E1=BB=83 ki=E1=BB=83m =\r\ntra v=C3=A0 x=E1=BB=AD l=C3=BD s=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 (DEV-101) vượt ngưỡng (55.9 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 55.9 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:08:13 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:08:13.723Z",
     "read": false,
     "domain": "monitoring-lab.vn"
@@ -53,8 +1043,8 @@
     "id": "mail-1790586446093",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nTr=E1=BA=A1m C=E1=BA=A3m Bi=E1=BA=BFn M=C3=B4i Tr=C6=B0=E1=BB=9Dng IoT =\r\nNode-01 (DEV-103)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng Th=C3=AD Nghi=E1=BB=87m =\r\nInternet T=E1=BA=A7ng 3\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =\r\n=C4=91=C6=B0=E1=BB=A3c: 80.5 %\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh b=C3=A1o: =\r\n80 %\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.2.11\r\nTh=E1=BB=9Di gian =\r\nph=C3=A1t hi=E1=BB=87n: 16:07:25 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp =\r\nWeb Dashboard =C4=91=E1=BB=83 ki=E1=BB=83m tra v=C3=A0 x=E1=BB=AD l=C3=BD =\r\ns=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103) vượt ngưỡng (80.5 %)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Trạm Cảm Biến Môi Trường IoT Node-01 (DEV-103)\r\nVị trí: Phòng Thí Nghiệm Internet Tầng 3\r\nGiá trị đo được: 80.5 %\r\nNgưỡng cảnh báo: 80 %\r\nĐịa chỉ IP: 192.168.2.11\r\nThời gian phát hiện: 16:07:25 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:07:26.093Z",
     "read": true,
     "domain": "monitoring-lab.vn"
@@ -63,8 +1053,8 @@
     "id": "mail-1790586410918",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nServer Rack Cluster Alpha (DEV-102)\r\nV=E1=BB=8B tr=C3=AD: Data Center =\r\nPh=C3=B2ng 204\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =C4=91=C6=B0=E1=BB=A3c: 80.5 =\r\n=C2=B0C\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh b=C3=A1o: 75 =C2=B0C\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.50\r\nTh=E1=BB=9Di gian ph=C3=A1t =\r\nhi=E1=BB=87n: 16:06:50 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web =\r\nDashboard =C4=91=E1=BB=83 ki=E1=BB=83m tra v=C3=A0 x=E1=BB=AD l=C3=BD =\r\ns=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Server Rack Cluster Alpha (DEV-102) vượt ngưỡng (80.5 °C)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Server Rack Cluster Alpha (DEV-102)\r\nVị trí: Data Center Phòng 204\r\nGiá trị đo được: 80.5 °C\r\nNgưỡng cảnh báo: 75 °C\r\nĐịa chỉ IP: 192.168.1.50\r\nThời gian phát hiện: 16:06:50 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:06:50.918Z",
     "read": false,
     "domain": "monitoring-lab.vn"
@@ -73,8 +1063,8 @@
     "id": "mail-1790586341628",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nCore Switch Cisco Catalyst 9300 (DEV-101)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng =\r\nM=C3=A1y Ch=E1=BB=A7 Trung T=C3=A2m\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =\r\n=C4=91=C6=B0=E1=BB=A3c: 95.5 Mbps\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh =\r\nb=C3=A1o: 90 Mbps\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.1\r\nTh=E1=BB=9Di gian ph=C3=A1t hi=E1=BB=87n: 16:05:41 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web Dashboard =C4=91=E1=BB=83 ki=E1=BB=83m =\r\ntra v=C3=A0 x=E1=BB=AD l=C3=BD s=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 (DEV-101) vượt ngưỡng (95.5 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 95.5 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:05:41 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:05:41.628Z",
     "read": false,
     "domain": "monitoring-lab.vn"
@@ -83,8 +1073,8 @@
     "id": "mail-1790586015863",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nCore Switch Cisco Catalyst 9300 (DEV-101)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng =\r\nM=C3=A1y Ch=E1=BB=A7 Trung T=C3=A2m\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =\r\n=C4=91=C6=B0=E1=BB=A3c: 90.8 Mbps\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh =\r\nb=C3=A1o: 90 Mbps\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.1\r\nTh=E1=BB=9Di gian ph=C3=A1t hi=E1=BB=87n: 16:00:15 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web Dashboard =C4=91=E1=BB=83 ki=E1=BB=83m =\r\ntra v=C3=A0 x=E1=BB=AD l=C3=BD s=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 (DEV-101) vượt ngưỡng (90.8 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.8 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 16:00:15 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T09:00:15.863Z",
     "read": true,
     "domain": "monitoring-lab.vn"
@@ -93,8 +1083,8 @@
     "id": "mail-1790585964759",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nCore Switch Cisco Catalyst 9300 (DEV-101)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng =\r\nM=C3=A1y Ch=E1=BB=A7 Trung T=C3=A2m\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =\r\n=C4=91=C6=B0=E1=BB=A3c: 90.2 Mbps\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh =\r\nb=C3=A1o: 90 Mbps\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.1\r\nTh=E1=BB=9Di gian ph=C3=A1t hi=E1=BB=87n: 15:59:24 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web Dashboard =C4=91=E1=BB=83 ki=E1=BB=83m =\r\ntra v=C3=A0 x=E1=BB=AD l=C3=BD s=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 (DEV-101) vượt ngưỡng (90.2 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.2 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 15:59:24 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T08:59:24.759Z",
     "read": false,
     "domain": "monitoring-lab.vn"
@@ -103,8 +1093,8 @@
     "id": "mail-1790585898806",
     "from": "sensor-alert@iot-network.local",
     "to": "manager@monitoring-lab.vn",
-    "subject": "=?UTF-8?Q?=5BB=C3=81O_=C4=90=E1=BB=98NG_T=E1=BB=B0?=",
-    "body": "C=E1=BA=A2NH B=C3=81O T=E1=BB=B0 =C4=90=E1=BB=98NG T=E1=BB=AA H=E1=BB=86 =\r\nTH=E1=BB=90NG GI=C3=81M S=C3=81T M=E1=BA=A0NG:\n\nThi=E1=BA=BFt b=E1=BB=8B: =\r\nCore Switch Cisco Catalyst 9300 (DEV-101)\r\nV=E1=BB=8B tr=C3=AD: Ph=C3=B2ng =\r\nM=C3=A1y Ch=E1=BB=A7 Trung T=C3=A2m\r\nGi=C3=A1 tr=E1=BB=8B =C4=91o =\r\n=C4=91=C6=B0=E1=BB=A3c: 90.8 Mbps\r\nNg=C6=B0=E1=BB=A1ng c=E1=BA=A3nh =\r\nb=C3=A1o: 90 Mbps\r\n=C4=90=E1=BB=8Ba ch=E1=BB=89 IP: 192.168.1.1\r\nTh=E1=BB=9Di gian ph=C3=A1t hi=E1=BB=87n: 15:58:18 28/9/2026\n\nVui l=C3=B2ng truy c=E1=BA=ADp Web Dashboard =C4=91=E1=BB=83 ki=E1=BB=83m =\r\ntra v=C3=A0 x=E1=BB=AD l=C3=BD s=E1=BB=B1 c=E1=BB=91.\r\n",
+    "subject": "[BÁO ĐỘNG TỰ ĐỘNG] Cảm biến Core Switch Cisco Catalyst 9300 (DEV-101) vượt ngưỡng (90.8 Mbps)",
+    "body": "CẢNH BÁO TỰ ĐỘNG TỪ HỆ THỐNG GIÁM SÁT MẠNG:\n\nThiết bị: Core Switch Cisco Catalyst 9300 (DEV-101)\r\nVị trí: Phòng Máy Chủ Trung Tâm\r\nGiá trị đo được: 90.8 Mbps\r\nNgưỡng cảnh báo: 90 Mbps\r\nĐịa chỉ IP: 192.168.1.1\r\nThời gian phát hiện: 15:58:18 28/9/2026\n\nVui lòng truy cập Web Dashboard để kiểm tra và xử lý sự cố.\r\n",
     "date": "2026-09-28T08:58:18.806Z",
     "read": false,
     "domain": "monitoring-lab.vn"

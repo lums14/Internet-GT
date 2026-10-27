@@ -1,0 +1,42 @@
+[
+  {
+    "id": "RULE-01",
+    "name": "Cảnh báo Nhiệt độ Quá tải (> 75°C)",
+    "description": "Khi cảm biến nhiệt độ vượt quá 75°C, tự động kích hoạt quạt làm mát Relay #1 và gửi mail khẩn cấp sang trung tâm điều hành.",
+    "condition": "Temperature > 75°C",
+    "targetEmail": "manager@monitoring-lab.vn",
+    "relayAction": "TRIGGER_RELAY_ON",
+    "severity": "CRITICAL",
+    "enabled": true
+  },
+  {
+    "id": "RULE-02",
+    "name": "Cảnh báo Nghẽn Băng thông Mạng (> 180 Mbps)",
+    "description": "Khi lưu lượng cổng viễn trắc vượt 180 Mbps, gửi thông báo cảnh báo nghẽn mạng tới nhóm kỹ sư mạng.",
+    "condition": "Network Bandwidth > 180 Mbps",
+    "targetEmail": "technician@monitoring-lab.vn",
+    "relayAction": "NONE",
+    "severity": "WARNING",
+    "enabled": true
+  },
+  {
+    "id": "RULE-03",
+    "name": "Cảnh báo Độ ẩm Vượt ngưỡng (> 85%)",
+    "description": "Khi độ ẩm môi trường trạm đo vượt 85%, kích hoạt hệ thống sấy relay và gửi thông báo tới cảm biến trạm.",
+    "condition": "Humidity > 85%",
+    "targetEmail": "sensor-alert@iot-network.local",
+    "relayAction": "TRIGGER_RELAY_ON",
+    "severity": "WARNING",
+    "enabled": true
+  },
+  {
+    "id": "RULE-04",
+    "name": "Cảnh báo Mất Kết nối Cảm biến (Offline Timeout)",
+    "description": "Khi cảm biến không gửi bản tin telemetry quá 15 giây, kích hoạt chuông cảnh báo và gửi email quản trị.",
+    "condition": "Last Updated > 15s",
+    "targetEmail": "admin@iot-network.local",
+    "relayAction": "TRIGGER_ALARM",
+    "severity": "CRITICAL",
+    "enabled": true
+  }
+]

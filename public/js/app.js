@@ -2,7 +2,7 @@
 // MAIN APPLICATION CONTROLLER (TABS, SSE REALTIME, CUSTOMIZE & CAMERA SIMULATION)
 // =============================================================================
 
-let currentRole = 'admin'; // 'admin' hoặc 'guest'
+let currentRole = 'guest'; // Mặc định khi chưa đăng nhập là 'guest' (Chỉ Xem)
 let audioEnabled = true;
 let sseSource = null;
 let cctvPlaying = true;
@@ -18,31 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
   // Khởi tạo các module con
   initNavigation();
   initThemeAndCustomization();
-  initRoleSwitcher();
+  initAuthHandlers();
   initAudioBeeper();
   initCctvSimulation();
   initModals();
 
+  // Kiểm tra phiên đăng nhập hiện tại từ server
+  checkInitialAuth();
+
   if (window.initCharts) window.initCharts();
   if (window.initDeviceEvents) window.initDeviceEvents();
+  if (window.initConfigEvents) window.initConfigEvents();
   if (window.initFtpEvents) window.initFtpEvents();
+  if (window.initDiagnosticEvents) window.initDiagnosticEvents();
+  if (window.initAlertsEvents) window.initAlertsEvents();
   if (window.initMailEvents) window.initMailEvents();
 
-  // Nạp dữ liệu ban đầu
+  // Nạp dữ liệu ban đầu cho toàn bộ 6 Tab
   if (window.loadDevices) window.loadDevices();
+  if (window.loadConfig) window.loadConfig();
   if (window.loadFtpFiles) window.loadFtpFiles();
+  if (window.loadPackets) window.loadPackets();
+  if (window.loadIncidents) window.loadIncidents();
+  if (window.loadTriggerRules) window.loadTriggerRules();
   if (window.loadEmails) window.loadEmails();
 
   // Kết nối Server-Sent Events (SSE) để biến trang web thành Web Động Thực Sự
   initSSE();
-
-  // Nút tải sơ đồ SVG
-  document.getElementById('btnDownloadTopology')?.addEventListener('click', () => {
-    const a = document.createElement('a');
-    a.href = 'assets/images/topology.svg';
-    a.download = 'network_topology_btl.svg';
-    a.click();
-  });
 });
 
 // -----------------------------------------------------------------------------
@@ -97,6 +99,32 @@ function initSSE() {
   // Sự kiện thay đổi file FTP
   sseSource.addEventListener('ftp_change', () => {
     if (window.loadFtpFiles) window.loadFtpFiles();
+  });
+
+  // Lắng nghe gói tin mới từ bộ thu Packet Sniffer
+  sseSource.addEventListener('packet_captured', (e) => {
+    try {
+      const pkt = JSON.parse(e.data);
+      if (window.handleNewPacketFromSSE) window.handleNewPacketFromSSE(pkt);
+    } catch (err) {
+      console.error(err);
+    }
+  });
+
+  // Lắng nghe sự cố viễn trắc mới phát sinh
+  sseSource.addEventListener('new_incident', (e) => {
+    try {
+      const inc = JSON.parse(e.data);
+      if (window.handleNewIncidentFromSSE) window.handleNewIncidentFromSSE(inc);
+      showToast(`[SỰ CỐ] ${inc.title} (${inc.deviceName})`, 'danger');
+    } catch (err) {
+      console.error(err);
+    }
+  });
+
+  // Lắng nghe thay đổi cấu hình truyền thông hoặc driver
+  sseSource.addEventListener('config_updated', () => {
+    if (window.loadConfig) window.loadConfig();
   });
 
   sseSource.onerror = () => {
@@ -179,10 +207,23 @@ function initThemeAndCustomization() {
   bindWidgetToggle('chkWidgetMedia', 'widget-media');
   bindWidgetToggle('chkWidgetTable', 'widget-table');
 
-  // Nút Dừng/Chạy bộ giả lập IoT
+  // Nút Dừng/Chạy bộ giả lập IoT (Yêu cầu quyền Admin)
   document.getElementById('btnPauseSim')?.addEventListener('click', async () => {
+    if (currentRole !== 'admin') {
+      showToast('Chỉ tài khoản ADMIN mới có quyền tạm dừng/tiếp tục bộ giả lập!', 'warning');
+      openLoginModal();
+      return;
+    }
     try {
-      const res = await fetch('/api/simulation/toggle', { method: 'POST' });
+      const res = await fetch('/api/simulation/toggle', { 
+        method: 'POST',
+        headers: getAuthHeaders()
+      });
+      if (res.status === 403) {
+        showToast('Quyền bị từ chối: Vui lòng đăng nhập quyền Admin!', 'warning');
+        openLoginModal();
+        return;
+      }
       const data = await res.json();
       const btnText = document.getElementById('simBtnText');
       const icon = document.getElementById('simIcon');
@@ -214,65 +255,252 @@ function updateThemeIcon(theme) {
 }
 
 // -----------------------------------------------------------------------------
-// 5. PHÂN QUYỀN NGƯỜI DÙNG (ROLE SWITCHER: ADMIN / GUEST)
+// 5. QUẢN LÝ XÁC THỰC, PHIÊN LÀM VIỆC & PHÂN QUYỀN (ADMIN / GUEST)
 // -----------------------------------------------------------------------------
-function applyRolePermissions(role) {
+
+function getAuthToken() {
+  return localStorage.getItem('iot_admin_token') || '';
+}
+
+function getAuthHeaders() {
+  const token = getAuthToken();
+  const headers = {
+    'X-User-Role': currentRole
+  };
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`;
+    headers['X-Auth-Token'] = token;
+  }
+  return headers;
+}
+
+window.getAuthToken = getAuthToken;
+window.getAuthHeaders = getAuthHeaders;
+
+function openLoginModal() {
+  const modal = document.getElementById('modalLogin');
+  if (modal) {
+    const errAlert = document.getElementById('loginErrorAlert');
+    if (errAlert) errAlert.style.display = 'none';
+    modal.classList.add('active');
+    setTimeout(() => {
+      document.getElementById('loginUsername')?.focus();
+    }, 100);
+  }
+}
+window.openLoginModal = openLoginModal;
+
+function applyRolePermissions(role, showNotification = false) {
   currentRole = role;
   const roleBadge = document.getElementById('roleSelector');
   const roleText = document.getElementById('roleText');
   const roleIcon = document.getElementById('roleIcon');
   const guestBanner = document.getElementById('guestNoticeBanner');
+  const btnNavLogin = document.getElementById('btnNavLogin');
+  const btnNavLogout = document.getElementById('btnNavLogout');
 
   if (role === 'guest') {
     document.body.classList.add('role-guest');
     if (guestBanner) guestBanner.style.display = 'flex';
+    if (btnNavLogin) btnNavLogin.style.display = 'inline-flex';
+    if (btnNavLogout) btnNavLogout.style.display = 'none';
+
     if (roleBadge) {
       roleBadge.style.borderColor = 'var(--status-warning)';
       roleBadge.style.color = 'var(--status-warning)';
       roleBadge.style.background = 'rgba(245, 158, 11, 0.12)';
+      roleBadge.title = 'Chế độ Khách (Role: Guest). Bấm để Đăng nhập Quản trị viên';
     }
     if (roleText) roleText.textContent = 'Role: GUEST (Chỉ Xem)';
-    if (roleIcon) roleIcon.setAttribute('data-lucide', 'lock');
+    if (roleIcon) roleIcon.setAttribute('data-lucide', 'shield-alert');
 
-    // Tự động đóng tất cả các modal thao tác và tùy biến nếu đang mở
-    document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
-    showToast('Chế độ GUEST: Bạn chỉ có quyền xem dữ liệu, mọi thao tác và tùy chỉnh đã bị khóa!', 'warning');
+    // Tự động đóng tất cả các modal thao tác và tùy biến của admin nếu đang mở
+    document.querySelectorAll('.modal-overlay').forEach(m => {
+      if (m.id !== 'modalLogin' && m.id !== 'modalViewMail') {
+        m.classList.remove('active');
+      }
+    });
+
+    if (showNotification) {
+      showToast('Chế độ GUEST: Bạn chỉ có quyền xem dữ liệu, mọi thao tác quản trị đã bị khóa!', 'warning');
+    }
   } else {
     document.body.classList.remove('role-guest');
     if (guestBanner) guestBanner.style.display = 'none';
+    if (btnNavLogin) btnNavLogin.style.display = 'none';
+    if (btnNavLogout) btnNavLogout.style.display = 'inline-flex';
+
     if (roleBadge) {
       roleBadge.style.borderColor = 'var(--accent-color)';
       roleBadge.style.color = 'var(--accent-color)';
       roleBadge.style.background = 'var(--accent-light)';
+      roleBadge.title = 'Tài khoản Quản trị viên (Role: Admin - Toàn Quyền)';
     }
     if (roleText) roleText.textContent = 'Role: ADMIN (Toàn Quyền)';
     if (roleIcon) roleIcon.setAttribute('data-lucide', 'shield-check');
-    showToast('Chế độ ADMIN: Toàn quyền thao tác, cấu hình thiết bị và tùy biến hệ thống!', 'success');
+
+    if (showNotification) {
+      showToast('Đã đăng nhập ADMIN: Toàn quyền thao tác, cấu hình thiết bị và tùy biến hệ thống!', 'success');
+    }
   }
 
   if (window.lucide) window.lucide.createIcons();
 
   // Yêu cầu các module cập nhật lại UI theo role
   if (window.renderDevicesTable) window.renderDevicesTable();
+  if (window.loadConfig) window.loadConfig();
   if (window.loadFtpFiles) window.loadFtpFiles();
+  if (window.loadPackets) window.loadPackets();
+  if (window.loadIncidents) window.loadIncidents();
+  if (window.loadTriggerRules) window.loadTriggerRules();
   if (window.loadEmails) window.loadEmails();
 }
 
-function initRoleSwitcher() {
-  const roleBadge = document.getElementById('roleSelector');
-  roleBadge?.addEventListener('click', () => {
-    const nextRole = currentRole === 'admin' ? 'guest' : 'admin';
-    applyRolePermissions(nextRole);
+// Kiểm tra phiên đăng nhập từ localStorage khi khởi động
+async function checkInitialAuth() {
+  const token = getAuthToken();
+  if (!token) {
+    applyRolePermissions('guest', false);
+    return;
+  }
+
+  try {
+    const res = await fetch('/api/auth/me', {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.authenticated && data.role === 'admin') {
+        applyRolePermissions('admin', false);
+        return;
+      }
+    }
+  } catch (err) {
+    console.warn('Lỗi kiểm tra phiên admin:', err);
+  }
+
+  // Token không hợp lệ hoặc đã bị server xóa
+  localStorage.removeItem('iot_admin_token');
+  applyRolePermissions('guest', false);
+}
+
+function initAuthHandlers() {
+  // Nút mở modal đăng nhập ở header và banner
+  document.getElementById('btnNavLogin')?.addEventListener('click', openLoginModal);
+  document.getElementById('btnBannerLogin')?.addEventListener('click', openLoginModal);
+
+  // Nhấp vào role badge
+  document.getElementById('roleSelector')?.addEventListener('click', () => {
+    if (currentRole === 'guest') {
+      openLoginModal();
+    } else {
+      showToast('Bạn đang ở phiên đăng nhập ADMIN (Toàn quyền quản trị)', 'info');
+    }
   });
 
-  // Áp dụng quyền ban đầu
-  applyRolePermissions(currentRole);
+  // Nút đăng xuất
+  document.getElementById('btnNavLogout')?.addEventListener('click', handleLogout);
+
+  // Nút điền nhanh tài khoản Admin demo
+  document.getElementById('btnQuickFillAdmin')?.addEventListener('click', () => {
+    const u = document.getElementById('loginUsername');
+    const p = document.getElementById('loginPassword');
+    if (u) u.value = 'admin';
+    if (p) p.value = 'admin123';
+  });
+
+  // Nút ẩn/hiện mật khẩu
+  document.getElementById('btnTogglePassword')?.addEventListener('click', () => {
+    const p = document.getElementById('loginPassword');
+    const icon = document.getElementById('togglePasswordIcon');
+    if (!p) return;
+    if (p.type === 'password') {
+      p.type = 'text';
+      if (icon) icon.setAttribute('data-lucide', 'eye-off');
+    } else {
+      p.type = 'password';
+      if (icon) icon.setAttribute('data-lucide', 'eye');
+    }
+    if (window.lucide) window.lucide.createIcons();
+  });
+
+  // Submit form đăng nhập
+  document.getElementById('formLogin')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const username = document.getElementById('loginUsername').value.trim();
+    const password = document.getElementById('loginPassword').value.trim();
+    const submitBtn = document.getElementById('btnLoginSubmit');
+    const errAlert = document.getElementById('loginErrorAlert');
+    const errText = document.getElementById('loginErrorText');
+
+    if (!username || !password) return;
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span style="display:inline-block;animation:spin 1s linear infinite;">⏳</span> Đang xác thực...';
+    }
+
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        localStorage.setItem('iot_admin_token', data.token);
+        document.getElementById('modalLogin')?.classList.remove('active');
+        document.getElementById('formLogin')?.reset();
+        if (errAlert) errAlert.style.display = 'none';
+
+        applyRolePermissions('admin', true);
+      } else {
+        if (errAlert && errText) {
+          errText.textContent = data.error || 'Tên đăng nhập hoặc mật khẩu không đúng!';
+          errAlert.style.display = 'flex';
+          if (window.lucide) window.lucide.createIcons();
+        }
+      }
+    } catch (err) {
+      console.error('Lỗi đăng nhập:', err);
+      if (errAlert && errText) {
+        errText.textContent = 'Lỗi kết nối tới máy chủ!';
+        errAlert.style.display = 'flex';
+      }
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i data-lucide="log-in"></i> Đăng Nhập';
+        if (window.lucide) window.lucide.createIcons();
+      }
+    }
+  });
+}
+
+async function handleLogout() {
+  const token = getAuthToken();
+  try {
+    if (token) {
+      await fetch('/api/auth/logout', {
+        method: 'POST',
+        headers: getAuthHeaders()
+      });
+    }
+  } catch (err) {
+    console.error('Lỗi đăng xuất:', err);
+  } finally {
+    localStorage.removeItem('iot_admin_token');
+    applyRolePermissions('guest', true);
+  }
 }
 
 function getCurrentRole() {
   return currentRole;
 }
 window.getCurrentRole = getCurrentRole;
+window.applyRolePermissions = applyRolePermissions;
 window.applyRolePermissions = applyRolePermissions;
 
 // -----------------------------------------------------------------------------
@@ -479,6 +707,72 @@ function initCctvSimulation() {
     a.download = `cctv_snapshot_${Date.now()}.png`;
     a.click();
     showToast('Đã chụp và lưu ảnh trích xuất từ camera giám sát!', 'success');
+  });
+
+  // Chuyển đổi giữa Live Stream Canvas và Video Clip MP4
+  document.getElementById('btnToggleCctvMode')?.addEventListener('click', () => {
+    const canvas = document.getElementById('cctvCanvas');
+    const video = document.getElementById('cctvVideoClip');
+    const hud = document.getElementById('cctvHud');
+    const controlsBar = document.querySelector('.cctv-controls-bar');
+    const label = document.getElementById('cctvModeLabel');
+    const badge = document.getElementById('cctvLiveBadge');
+    const title = document.getElementById('cctvCardTitle');
+    if (!canvas || !video) return;
+
+    if (video.style.display === 'none') {
+      canvas.style.display = 'none';
+      if (hud) hud.style.display = 'none';
+      if (controlsBar) controlsBar.style.display = 'none';
+      video.style.display = 'block';
+      video.play().catch(() => {});
+      if (label) label.textContent = 'Camera Live Feed';
+      if (badge) {
+        badge.innerHTML = '<i data-lucide="play-circle" style="width:12px; height:12px;"></i> VIDEO CLIP';
+        badge.style.background = 'rgba(16, 185, 129, 0.2)';
+        badge.style.color = '#10b981';
+        badge.style.borderColor = '#10b981';
+      }
+      if (title) title.textContent = 'Video Clip Giám Sát Hiện Trường Trạm IoT';
+      showToast('Đang phát Video Clip hiện trường ghi hình', 'info');
+      if (window.lucide) lucide.createIcons();
+    } else {
+      video.pause();
+      video.style.display = 'none';
+      canvas.style.display = 'block';
+      if (hud) hud.style.display = 'flex';
+      if (controlsBar) controlsBar.style.display = 'flex';
+      if (label) label.textContent = 'Xem Video Clip';
+      if (badge) {
+        badge.innerHTML = '<i data-lucide="rss" style="width:12px; height:12px;"></i> LIVE FEED';
+        badge.style.background = 'rgba(239, 68, 68, 0.2)';
+        badge.style.color = '#ef4444';
+        badge.style.borderColor = '#ef4444';
+      }
+      if (title) title.textContent = 'Camera Giám Sát Hiện Trường Trực Tiếp (Live CCTV / Clip Stream)';
+      showToast('Đã quay lại luồng Camera CCTV Live', 'success');
+      if (window.lucide) lucide.createIcons();
+    }
+  });
+
+  // Chuyển đổi giữa Ảnh Thực Tế và Sơ Đồ SVG của Trạm Thu Thập Viễn Trắc
+  document.getElementById('btnToggleStationView')?.addEventListener('click', () => {
+    const photo = document.getElementById('imgStationPhoto');
+    const svg = document.getElementById('imgStationSvg');
+    const label = document.getElementById('stationViewLabel');
+    if (!photo || !svg) return;
+
+    if (photo.style.display !== 'none') {
+      photo.style.display = 'none';
+      svg.style.display = 'block';
+      if (label) label.textContent = 'Ảnh Thực Tế';
+      showToast('Đang hiển thị Sơ Đồ Khối Kỹ Thuật (SVG)', 'info');
+    } else {
+      photo.style.display = 'block';
+      svg.style.display = 'none';
+      if (label) label.textContent = 'Sơ Đồ SVG';
+      showToast('Đang hiển thị Hình Ảnh Trạm Viễn Trắc Thực Tế', 'success');
+    }
   });
 }
 
